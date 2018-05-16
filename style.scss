@@ -1,0 +1,116 @@
+@import "compass";
+
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$subColor: #008b8b;
+$fontColor: white;
+
+html {
+    font-size: 62.5%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body {
+    font-family: $baseFontFamily;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+    
+}
+/* header
+----------------------------------- */
+.image {
+    background-image: url("image_lesson7.jpg");
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* main
+------------------------------------ */
+h1 {
+    margin: 40px auto 20px;
+    font-size: 3.0rem;
+    font-weight: bold;
+    @extend .text-center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 150px;
+    .text-box {
+        color: $fontColor;
+        font-size: 2.0rem;
+        background-color: $subColor;
+        width: 90%;
+        min-height: 300px;
+        margin: 10px auto;
+        h2 {
+            background-color: lighten($subColor, 15%);
+            padding: 10px;
+            @extend .text-center;
+        }
+        p {
+            display: block;
+            margin: 10px;
+            @extend .text-center;
+        }
+    }
+}
+
+/* footer
+-------------------------------------------*/
+
+footer {
+    background-color: lighten($subColor, 15%);
+    .footer-inner{
+        color: $fontColor;
+        @extend .text-center;
+        padding: 20px;
+        h3 {
+            font-size: 1.5rem;
+            padding: 20px;
+        }
+        .footer-button {
+            background-color: $subColor;
+            width: 100px;
+            height: 20px;
+            margin: auto;
+            @include border-radius(4px);
+            p {
+                padding-top: 3px;
+            }
+        }
+    }
+}
+
+
+
+
+/* desktop */
+
+@media (min-width: 769px) {
+
+/* header
+------------------------------------ */
+    .image {
+        background-image: url("image_lesson7.jpg");
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+
+/* main
+--------------------------------------*/
+    .container {
+        display: flex;
+        flex-direction: row;
+        .text-box {
+        margin: 20px;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+.text-center, h1, .container .text-box h2, .container .text-box p, footer .footer-inner {
+  text-align: center; }
+
+body {
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em; }
+
+/* header
+----------------------------------- */
+.image {
+  background-image: url("image_lesson7.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+/* main
+------------------------------------ */
+h1 {
+  margin: 40px auto 20px;
+  font-size: 3.0rem;
+  font-weight: bold; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 150px; }
+  .container .text-box {
+    color: white;
+    font-size: 2.0rem;
+    background-color: #008b8b;
+    width: 90%;
+    min-height: 300px;
+    margin: 10px auto; }
+    .container .text-box h2 {
+      background-color: #00d8d8;
+      padding: 10px; }
+    .container .text-box p {
+      display: block;
+      margin: 10px; }
+
+/* footer
+-------------------------------------------*/
+footer {
+  background-color: #00d8d8; }
+  footer .footer-inner {
+    color: white;
+    padding: 20px; }
+    footer .footer-inner h3 {
+      font-size: 1.5rem;
+      padding: 20px; }
+    footer .footer-inner .footer-button {
+      background-color: #008b8b;
+      width: 100px;
+      height: 20px;
+      margin: auto;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px; }
+      footer .footer-inner .footer-button p {
+        padding-top: 3px; }
+
+/* desktop */
+@media (min-width: 769px) {
+  /* header
+  ------------------------------------ */
+  .image {
+    background-image: url("image_lesson7.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; }
+
+  /* main
+  --------------------------------------*/
+  .container {
+    display: flex;
+    flex-direction: row; }
+    .container .text-box {
+      margin: 20px; } }
+
+/*# sourceMappingURL=style.css.map */
